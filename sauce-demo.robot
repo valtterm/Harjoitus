@@ -1,5 +1,5 @@
 *** Settings ****
-Documentation   Play stupid games, win stupid prices.
+Documentation   :)
 Library         SeleniumLibrary
 
 *** Variables ***
@@ -25,9 +25,9 @@ Add Backpack To Cart
 Checkout
     Click Element                       xpath: //*[contains(text(), "CHECKOUT")]
     Wait Until Page Contains            Checkout: Your Information
-    Input Text                          id:first-name   Lempäälän
-    Input Text                          id:last-name    Kuningas
-    Input Text                          id:postal-code  37500
+    Input Text                          id:first-name   Valtter
+    Input Text                          id:last-name    Miettinen
+    Input Text                          id:postal-code  33720
     Click Element                       class:cart_button
     Wait Until Page Contains            Checkout: Overview
     Page Should Contain                 Sauce Labs Backpack
